@@ -63,7 +63,7 @@ const writeTest = async() => {
       const server = await device.gatt.connect();
       console.log('> Connected >>2:        ' + device.gatt.connected);
 
-      await device.addEventListener('gattserverdisconnected', onDisconnected);
+      // await device.addEventListener('gattserverdisconnected', onDisconnected);
 
       console.log('Getting Service...');
       const service = await server.getPrimaryService(serviceUuid);
@@ -89,8 +89,10 @@ const writeTest = async() => {
             console.log('Disconnecting from Bluetooth Device...');
             device.gatt.disconnect();
           }, 5000);
-          
+
       }, 6000);
+
+      
       
     } catch(error) {
       console.log('Argh! ' + error);

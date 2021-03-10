@@ -74,7 +74,7 @@ const writeTest = async() => {
       console.log("Writing...");
 
       // const encoder = new TextEncoder('utf-8');
-      // const data1 = encoder.encode("2901020304010228"); //2901020304010228
+      // const data1 = encoder.encode("2901020304010228");
       // const data2 = encoder.encode("FE4F50454E00000000FD");
 
       await characteristic.writeValue(typedArray1);
@@ -88,12 +88,9 @@ const writeTest = async() => {
           setTimeout(() => {
             console.log('Disconnecting from Bluetooth Device...');
             device.gatt.disconnect();
-            
           }, 5000);
+          
       }, 6000);
-
-      // console.log(typeof(data1));
-      // console.log(typeof(data2));
       
     } catch(error) {
       console.log('Argh! ' + error);

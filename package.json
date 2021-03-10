@@ -1,11 +1,9 @@
 {
-  "name": "web_bluetooth",
+  "name": "test_web_bluetooth",
   "version": "1.0.0",
   "description": "",
-  "main": "ble.js",
+  "main": "uuid.js",
   "dependencies": {
-    "crypto": "^1.0.1",
-    "crypto-js": "^4.0.0",
     "noble": "^1.9.1"
   },
   "devDependencies": {},
@@ -14,13 +12,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wiphaphim/test_web_bluetooth.git"
+    "url": "git+https://github.com/Chanokchit/testwebble.git"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/wiphaphim/test_web_bluetooth/issues"
+    "url": "https://github.com/Chanokchit/testwebble/issues"
   },
-  "homepage": "https://github.com/wiphaphim/test_web_bluetooth#readme"
+  "homepage": "https://github.com/Chanokchit/testwebble#readme"
 }
